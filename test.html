@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+a.test {
+    font-weight: bold;
+    color: yellow;
+}
+</style>
+            <meta charset="utf-8">
+    <title>Demo</title>
+</head>
+<body>
+     <form name="login" onsubmit="return(validate());"action="feedback.php" class="TTWForm" method="post">
+      <div id="field1-container" class="field f_50">
+          <label for="field1">Name</label></br>
+          <input name="name" id="field1" type="text"></br>
+      </div>
+      <div id="field2-container" class="field f_50">
+        <label for="field2">Telephone</label></br>
+        <input name="tel" id="field2" type="text" onblur="return nn()"></br>
+      </div>
+      <div id="field5-container" class="field f_50">
+        <label for="field5">Email</label></br>
+        <input name="email" id="field5" type="email" onblur="return validate()"></br>
+      </div>
+      <div id="field4-container" class="field f_100">
+        <label for="field4">Message</label></br>
+        <textarea rows="5" cols="20" name="message" id="field4"></textarea></br>
+      </div>
+      <div id="form-submit" class="field f_100 clearfix submit">
+          <input name="s1" type="submit" class="button" value="Submit" >
+       
+      </div>
+    </form>
+        <a href="">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+$( document ).ready(function() {
+ 
+    $( "a" ).click(function( event ) {
+ 
+        alert( "</script>script<form>" );
+ 
+        event.preventDefault();
+ 
+    });
+    
+});
+    </script>
+</body>
+</html>
